@@ -1,0 +1,11 @@
+C:\Users\legna\Documents\Facultad\prog_tres\actividad_2\AdministracionArticulos\Services\bin\Debug\Services.dll
+C:\Users\legna\Documents\Facultad\prog_tres\actividad_2\AdministracionArticulos\Services\bin\Debug\Services.pdb
+C:\Users\legna\Documents\Facultad\prog_tres\actividad_2\AdministracionArticulos\Services\bin\Debug\Models.dll
+C:\Users\legna\Documents\Facultad\prog_tres\actividad_2\AdministracionArticulos\Services\bin\Debug\Utils.dll
+C:\Users\legna\Documents\Facultad\prog_tres\actividad_2\AdministracionArticulos\Services\bin\Debug\Models.pdb
+C:\Users\legna\Documents\Facultad\prog_tres\actividad_2\AdministracionArticulos\Services\bin\Debug\Utils.pdb
+C:\Users\legna\Documents\Facultad\prog_tres\actividad_2\AdministracionArticulos\Services\obj\Debug\Services.csproj.AssemblyReference.cache
+C:\Users\legna\Documents\Facultad\prog_tres\actividad_2\AdministracionArticulos\Services\obj\Debug\Services.csproj.CoreCompileInputs.cache
+C:\Users\legna\Documents\Facultad\prog_tres\actividad_2\AdministracionArticulos\Services\obj\Debug\Services.csproj.Up2Date
+C:\Users\legna\Documents\Facultad\prog_tres\actividad_2\AdministracionArticulos\Services\obj\Debug\Services.dll
+C:\Users\legna\Documents\Facultad\prog_tres\actividad_2\AdministracionArticulos\Services\obj\Debug\Services.pdb

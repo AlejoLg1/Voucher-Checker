@@ -1,0 +1,6 @@
+C:\Users\legna\Documents\Facultad\prog_tres\actividad_2\AdministracionArticulos\Models\bin\Debug\Models.dll
+C:\Users\legna\Documents\Facultad\prog_tres\actividad_2\AdministracionArticulos\Models\bin\Debug\Models.pdb
+C:\Users\legna\Documents\Facultad\prog_tres\actividad_2\AdministracionArticulos\Models\obj\Debug\Models.csproj.AssemblyReference.cache
+C:\Users\legna\Documents\Facultad\prog_tres\actividad_2\AdministracionArticulos\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+C:\Users\legna\Documents\Facultad\prog_tres\actividad_2\AdministracionArticulos\Models\obj\Debug\Models.dll
+C:\Users\legna\Documents\Facultad\prog_tres\actividad_2\AdministracionArticulos\Models\obj\Debug\Models.pdb
