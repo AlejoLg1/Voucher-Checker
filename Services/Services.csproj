@@ -45,9 +45,11 @@
   <ItemGroup>
     <Compile Include="ArticuloServices.cs" />
     <Compile Include="CategoriaServices.cs" />
+    <Compile Include="ClienteServices.cs" />
     <Compile Include="ImagenServices.cs" />
     <Compile Include="MarcaServices.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VoucherServices.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Models\Models.csproj">
