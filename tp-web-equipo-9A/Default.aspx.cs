@@ -13,5 +13,10 @@ namespace tp_web_equipo_9A
         {
 
         }
+
+        protected void BtnValidarVoucher_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
