@@ -4,7 +4,7 @@
 
 <html>
 <head runat="server">
-    <title>¡Probá y ganá!</title>
+    <title>G9 Recompensas</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <link rel="icon" href="/images/clover.png" type="logo" />
