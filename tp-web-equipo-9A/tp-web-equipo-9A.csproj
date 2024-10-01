@@ -87,6 +87,7 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Default.aspx" />
+    <Content Include="ErrorVoucher.aspx" />
     <Content Include="Global.asax" />
     <Content Include="images\clover.png" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -131,6 +132,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorVoucher.aspx.cs">
+      <DependentUpon>ErrorVoucher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorVoucher.aspx.designer.cs">
+      <DependentUpon>ErrorVoucher.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

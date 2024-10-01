@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -14,9 +15,26 @@ namespace tp_web_equipo_9A
 
         }
 
-        protected void BtnValidarVoucher_Click(object sender, EventArgs e)
+        protected void btnValidarVoucher_Click(object sender, EventArgs e)
         {
-            
-        }
+            VoucherServices service = new VoucherServices();
+
+            try
+            {
+                string voucherCode = HttpUtility.HtmlEncode(txtVoucherCode.Text);
+                if (service.usedVoucherCode(voucherCode))
+                {
+                    Response.Redirect("~/ErrorVoucher.aspx");
+                }
+                else
+                {
+                    // Acá estaría el redirect a la página de selección de artículo
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }   
     }
 }
