@@ -9,7 +9,7 @@ using Utils;
 
 namespace Services
 {
-    internal class VoucherServices
+    public class VoucherServices
     {
         private DataBaseAccess DB = new DataBaseAccess();
 
@@ -62,18 +62,48 @@ namespace Services
             }
         }
 
-        public void delete(int Id)
+        public void delete(string CodigoVoucher)
         {
             try
             {
                 DB.clearParameters();
                 DB.setQuery("Delete from Vouchers where CodigoVoucher = @CodigoVoucher");
-                DB.setParameter("@Id", Id);
+                DB.setParameter("@CodigoVoucher", CodigoVoucher);
                 DB.excecuteAction();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error al eliminar Voucher. Comuníquese con el Soporte.", "FATAL ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                DB.CloseConnection();
+            }
+        }
+
+        public bool usedVoucherCode(string codVoucher)
+        {
+            try
+            {
+                bool response = true;
+                DB.clearParameters();
+                DB.setQuery("Select IdCliente from Vouchers where CodigoVoucher = @codVoucher");
+                DB.setParameter("@codVoucher", codVoucher);
+                DB.excecuteQuery();
+                
+                while (DB.Reader.Read())
+                {
+                    if (DB.Reader.IsDBNull(DB.Reader.GetOrdinal("IdCliente")))
+                    {
+                        response = false;
+                    }
+                }
+                return response;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al verificar Voucher. Comuníquese con el Soporte.", "FATAL ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return true;
             }
             finally
             {

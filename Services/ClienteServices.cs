@@ -9,7 +9,7 @@ using Utils;
 
 namespace Services
 {
-    internal class ClienteServices
+    public class ClienteServices
     {
         private DataBaseAccess DB = new DataBaseAccess();
 
