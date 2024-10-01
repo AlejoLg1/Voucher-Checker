@@ -103,3 +103,8 @@ FodyWeavers.xsd
 # Temporary files
 *.tmp
 *.temp
+*.json
+*.dll
+*.pdb
+*.csproj
+*.cache
