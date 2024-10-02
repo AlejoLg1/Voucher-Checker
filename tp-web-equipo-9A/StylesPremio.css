@@ -1,6 +1,6 @@
-﻿.img-uniform {
-    width: 100%; /* Ajustar al 100% del contenedor */
-    height: 200px; /* Altura fija de 200px */
-    object-fit: cover; /* Mantener la proporción de la imagen sin distorsión */
+﻿.img-style {
+    max-width: 100%; /* No exceder el 100% del ancho del contenedor */
+    max-height: 200px; /* Límite máximo de altura de 200px */
+    height: auto; /* Ajustar la altura automáticamente para mantener proporciones */
+    object-fit: contain; /* Mantener el aspecto original, con espacio en blanco si es necesario */
 }
-
