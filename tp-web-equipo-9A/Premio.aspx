@@ -14,6 +14,7 @@
                     <div class="card-body">
                         <h5 class="card-title"><%#Eval("Nombre") %></h5>
                         <p class="card-text"><%#Eval("Descripcion") %></p>
+                        <button type="button" class="btn btn-primary mt-auto">Elegir</button>
                     </div>
                 </div>
             </div>
