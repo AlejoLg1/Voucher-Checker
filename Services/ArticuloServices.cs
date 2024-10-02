@@ -21,7 +21,7 @@ namespace Services
             List<Articulo> list = new List<Articulo>();
             try
             {
-                DB.setQuery("SELECT A.Id, A.Codigo, A.Nombre, A.Descripcion, M.Id AS MarcaId, M.Descripcion AS MarcaDescripcion, C.Id AS CategoriaId, C.Descripcion AS CategoriaDescripcion, A.Precio FROM ARTICULOS AS A LEFT JOIN CATEGORIAS AS C ON C.Id = A.IdCategoria LEFT JOIN MARCAS AS M ON M.Id = A.IdMarca");
+                DB.setQuery("SELECT A.Id, A.Codigo, A.Nombre, A.Descripcion, A.Precio, M.Id AS MarcaId, M.Descripcion AS MarcaDescripcion, C.Id AS CategoriaId, C.Descripcion AS CategoriaDescripcion, (SELECT TOP 1 ImagenUrl FROM IMAGENES WHERE IdArticulo = A.Id) AS Imagen FROM ARTICULOS AS A LEFT JOIN CATEGORIAS AS C ON C.Id = A.IdCategoria LEFT JOIN MARCAS AS M ON M.Id = A.IdMarca");
                 DB.excecuteQuery();
 
                 while (DB.Reader.Read())
@@ -31,10 +31,10 @@ namespace Services
                     articulo.Codigo = (string)DB.Reader["Codigo"];
                     articulo.Nombre = (string)DB.Reader["Nombre"];
                     articulo.Descripcion = (string)DB.Reader["Descripcion"];
+                    articulo.Precio = (decimal)DB.Reader["Precio"];
+                    articulo.Imagen = DB.Reader["Imagen"] != DBNull.Value ? (string)DB.Reader["Imagen"] : "default-image.jpg";
 
                     AsignarMarcaYCategoria(articulo, DB.Reader);
-
-                    articulo.Precio = (decimal)DB.Reader["Precio"];
 
                     list.Add(articulo);
                 }
