@@ -1,0 +1,6 @@
+﻿.img-uniform {
+    width: 100%; /* Ajustar al 100% del contenedor */
+    height: 200px; /* Altura fija de 200px */
+    object-fit: cover; /* Mantener la proporción de la imagen sin distorsión */
+}
+
