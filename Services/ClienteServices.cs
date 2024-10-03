@@ -111,8 +111,6 @@ namespace Services
                 DB.CloseConnection();
             }
         }
-<<<<<<< HEAD
-
         public int ObtenerId(string dni)
         {
             try
@@ -142,8 +140,8 @@ namespace Services
                 DB.clearParameters();
             }
         }
-=======
->>>>>>> 1c23f7fb0d0bc5d3c2808453650cd2f945f21c2e
+       
     }
 
+    
 }
