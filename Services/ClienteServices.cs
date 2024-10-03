@@ -18,9 +18,9 @@ namespace Services
             try
             {
                 DB.clearParameters();
-                DB.setQuery("Insert into Clientes (Id, Documento, Nombre, Apellido, Email, Direccion, Ciudad, CP) values (@Id, @Documento, @Nombre, @Apellido, @Email, @Direccion, @Ciudad, @CP)");
+                DB.setQuery("Insert into Clientes (Documento, Nombre, Apellido, Email, Direccion, Ciudad, CP) values (@Documento, @Nombre, @Apellido, @Email, @Direccion, @Ciudad, @CP)");
 
-                DB.setParameter("@Id", newCliente.Id);
+
                 DB.setParameter("@Documento", newCliente.Documento);
                 DB.setParameter("@Nombre", newCliente.Nombre);
                 DB.setParameter("@Apellido", newCliente.Apellido);
@@ -93,8 +93,8 @@ namespace Services
             try
             {
                 bool response = false;
-                DB.setQuery("select Documento from Clientes where Documeto = @Dni");
-                DB.setParameter("@Documento", Dni);
+                DB.setQuery("select Documento from Clientes where Documento = @Dni");
+                DB.setParameter("@Dni", Dni);
                 DB.excecuteQuery();
 
                 if (DB.Reader.Read())
@@ -114,6 +114,34 @@ namespace Services
             }
         }
 
-       
+        public int ObtenerId(string dni)
+        {
+            try
+            {
+                DB.clearParameters();
+                DB.setQuery("select Id from Clientes where Documento = @dni");
+                DB.setParameter("@dni", dni);
+                DB.excecuteQuery();
+
+                if (DB.Reader.Read())
+                {
+                    return Convert.ToInt32(DB.Reader["Id"]);
+                }
+                else
+                {
+                    throw new Exception("cliente no encontrado");
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception("Error al obtener el ID del cliente: " + ex.Message);
+            }
+            finally
+            {
+                DB.CloseConnection();
+                DB.clearParameters();
+            }
+        }
     }
 }

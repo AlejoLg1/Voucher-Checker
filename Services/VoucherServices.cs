@@ -43,17 +43,19 @@ namespace Services
             try
             {
                 DB.clearParameters();
-                DB.setQuery("Update Vouchers set CodigoVoucher = @CodigoVoucher, IdCliente = @IdCliente, FechaCanje = @FechaCanje, IdArticulo = @IdArticulo Where CodigoVoucher = @CodigoVoucher");
+                DB.setQuery("UPDATE Vouchers set  IdCliente = @IdCli, FechaCanje = @FechaCan, IdArticulo = @IdArt where CodigoVoucher = @CodVoucher");
 
-                DB.setParameter("@CodigoVoucher", voucher.CodigoVoucher);
-                DB.setParameter("@IdCliente", voucher.IdCliente);
-                DB.setParameter("@FechaCanje", voucher.FechaCanje);
-                DB.setParameter("@IdArticulo", voucher.IdArticulo);
+                DB.setParameter("@CodVoucher", voucher.CodigoVoucher);
+                DB.setParameter("@IdCli", voucher.IdCliente);
+                DB.setParameter("@FechaCan", voucher.FechaCanje);
+                DB.setParameter("@IdArt", voucher.IdArticulo);
+
 
                 DB.excecuteAction();
             }
             catch (Exception ex)
             {
+                MessageBox.Show(ex.ToString());
                 MessageBox.Show("Error al modificar Voucher. Comuníquese con el Soporte.", "FATAL ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
@@ -90,7 +92,7 @@ namespace Services
                 DB.setQuery("Select IdCliente from Vouchers where CodigoVoucher = @codVoucher");
                 DB.setParameter("@codVoucher", codVoucher);
                 DB.excecuteQuery();
-                
+
                 while (DB.Reader.Read())
                 {
                     if (DB.Reader.IsDBNull(DB.Reader.GetOrdinal("IdCliente")))

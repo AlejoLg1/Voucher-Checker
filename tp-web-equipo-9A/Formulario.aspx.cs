@@ -13,7 +13,6 @@ namespace tp_web_equipo_9A
 {
     public partial class Formulario : System.Web.UI.Page
     {
-        private Cliente cliente = null;
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -22,19 +21,17 @@ namespace tp_web_equipo_9A
         protected void btnParticipar_Click(object sender, EventArgs e)
         {
             ClienteServices clienteServices = new ClienteServices();
+            VoucherServices voucherServices = new VoucherServices();
             try
             {
                 Cliente cliente = new Cliente();
+                Voucher voucher = new Voucher();
+                Articulo articulo = new Articulo();
+
                 if (!cboxTerminos.Checked)
                 {
                     lblError.Text = "Debes aceptar los términos y condiciones.";
                     return;
-                }
-
-
-                if (cliente == null)
-                {
-                    cliente = new Cliente();
                 }
 
                 cliente.Documento = txtDni.Text;
@@ -44,12 +41,26 @@ namespace tp_web_equipo_9A
                 cliente.Direccion = txtDireccion.Text;
                 cliente.Ciudad = txtCiudad.Text;
                 cliente.CP = int.Parse(txtCp.Text);
-                bool checkBox = cboxTerminos.Checked;
 
-                lblError.Text = "";
                 if (!clienteServices.repeatedCode(cliente.Documento))
                 {
                     clienteServices.add(cliente);
+                    lblError.Text = "Registro agregardo correctamente";
+                }
+
+                int idCliente = clienteServices.ObtenerId(cliente.Documento);
+                if (idCliente <= 0)
+                {
+                    throw new Exception("ID de cliente no válido.");
+                }
+                else
+                {
+                    voucher.IdCliente = idCliente;
+                    voucher.FechaCanje = DateTime.Now;
+                    voucher.CodigoVoucher = "Codigo02"; //Dato hardcodeado, me va allegar en el request
+                    voucher.IdArticulo = 2;//Dato hardcodeado, me va allegar en el request
+                    voucherServices.modify(voucher);
+                    
                 }
 
 
@@ -59,10 +70,11 @@ namespace tp_web_equipo_9A
                 lblError.Text = "Debe ingresar valores numericos en el campo de CP";
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                lblError.Text = "Ocurrio un error";
+                lblError.Text = "Ocurrio un error" + ex;
+
             }
         }
 
@@ -73,17 +85,17 @@ namespace tp_web_equipo_9A
 
             try
             {
-                
+
                 dbAccess.setQuery("SELECT Nombre, Apellido, Email, Direccion, Ciudad, CP FROM Clientes WHERE Documento = @dni");
 
-               
+
                 dbAccess.setParameter("@dni", dni);
 
                 dbAccess.excecuteQuery();
 
                 if (dbAccess.Reader.Read())
                 {
-                   
+
                     txtNombre.Text = dbAccess.Reader["Nombre"].ToString();
                     txtApellido.Text = dbAccess.Reader["Apellido"].ToString();
                     txtEmail.Text = dbAccess.Reader["Email"].ToString();
@@ -91,11 +103,12 @@ namespace tp_web_equipo_9A
                     txtCiudad.Text = dbAccess.Reader["Ciudad"].ToString();
                     txtCp.Text = dbAccess.Reader["CP"].ToString();
 
+                    btnParticipar.Text = "Participar";
                     lblError.Text = "Datos precargados correctamente.";
                 }
                 else
                 {
-                    
+
                     txtNombre.Text = "";
                     txtApellido.Text = "";
                     txtEmail.Text = "";
@@ -104,6 +117,7 @@ namespace tp_web_equipo_9A
                     txtCp.Text = "";
 
                     lblError.Text = "El cliente no existe. Puedes agregar uno nuevo.";
+                    btnParticipar.Text = "Registrar y participar";
                 }
             }
             catch (Exception ex)
