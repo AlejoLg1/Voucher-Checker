@@ -87,5 +87,30 @@ namespace Services
                 DB.CloseConnection();
             }
         }
+
+        public bool repeatedCode(string Dni)
+        {
+            try
+            {
+                bool response = false;
+                DB.setQuery("select Documento from Clientes where Documeto = @Dni");
+                DB.setParameter("@Documento", Dni);
+                DB.excecuteQuery();
+                if (DB.Reader.Read())
+                {
+                    response = true;
+                }
+                return response;
+            }
+            catch (Exception ex)
+            {
+                return true;
+            }
+            finally
+            {
+                DB.CloseConnection();
+            }
+        }
     }
+
 }
