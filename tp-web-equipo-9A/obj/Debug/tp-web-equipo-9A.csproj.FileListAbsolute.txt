@@ -48,7 +48,6 @@ C:\Users\legna\Documents\Facultad\prog_tres\unidad_7\actividad_4\TPWeb_equipo-9\
 C:\Users\legna\Documents\Facultad\prog_tres\unidad_7\actividad_4\TPWeb_equipo-9\tp-web-equipo-9A\bin\Services.pdb
 C:\Users\legna\Documents\Facultad\prog_tres\unidad_7\actividad_4\TPWeb_equipo-9\tp-web-equipo-9A\bin\Utils.pdb
 C:\Users\legna\Documents\Facultad\prog_tres\unidad_7\actividad_4\TPWeb_equipo-9\tp-web-equipo-9A\bin\Newtonsoft.Json.xml
-<<<<<<< HEAD
 C:\Users\carlo\OneDrive\Escritorio\UTN FACU\2do Cuatrimestre 2024\Programacion III\TPWEB\tp-web-equipo-9A\bin\tp-web-equipo-9A.dll.config
 C:\Users\carlo\OneDrive\Escritorio\UTN FACU\2do Cuatrimestre 2024\Programacion III\TPWEB\tp-web-equipo-9A\bin\tp-web-equipo-9A.dll
 C:\Users\carlo\OneDrive\Escritorio\UTN FACU\2do Cuatrimestre 2024\Programacion III\TPWEB\tp-web-equipo-9A\bin\tp-web-equipo-9A.pdb
@@ -99,55 +98,3 @@ C:\Users\carlo\OneDrive\Escritorio\UTN FACU\2do Cuatrimestre 2024\Programacion I
 C:\Users\carlo\OneDrive\Escritorio\UTN FACU\2do Cuatrimestre 2024\Programacion III\TPWEB\tp-web-equipo-9A\obj\Debug\tp-web-e.6F970FA6.Up2Date
 C:\Users\carlo\OneDrive\Escritorio\UTN FACU\2do Cuatrimestre 2024\Programacion III\TPWEB\tp-web-equipo-9A\obj\Debug\tp-web-equipo-9A.dll
 C:\Users\carlo\OneDrive\Escritorio\UTN FACU\2do Cuatrimestre 2024\Programacion III\TPWEB\tp-web-equipo-9A\obj\Debug\tp-web-equipo-9A.pdb
-=======
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\tp-web-equipo-9A.dll.config
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\tp-web-equipo-9A.dll
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\tp-web-equipo-9A.pdb
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\roslyn\csc.exe
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\roslyn\csc.exe.config
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\roslyn\csc.rsp
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\roslyn\csi.exe
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\roslyn\csi.exe.config
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\roslyn\csi.rsp
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\roslyn\Microsoft.Managed.Core.targets
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\roslyn\System.Buffers.dll
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\roslyn\System.Memory.dll
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\roslyn\System.Numerics.Vectors.dll
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\roslyn\System.Text.Encoding.CodePages.dll
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\roslyn\System.Threading.Tasks.Extensions.dll
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\roslyn\vbc.exe
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\roslyn\vbc.exe.config
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\roslyn\vbc.rsp
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\roslyn\VBCSCompiler.exe
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\AspNet.ScriptManager.jQuery.dll
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\Models.dll
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\Newtonsoft.Json.dll
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\Services.dll
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\Utils.dll
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\Models.pdb
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\Services.pdb
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\Utils.pdb
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\bin\Newtonsoft.Json.xml
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\obj\Debug\tp-web-equipo-9A.csproj.AssemblyReference.cache
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\obj\Debug\tp-web-equipo-9A.csproj.CoreCompileInputs.cache
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\obj\Debug\tp-web-e.6F970FA6.Up2Date
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\obj\Debug\tp-web-equipo-9A.dll
-C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\tp-web-equipo-9A\obj\Debug\tp-web-equipo-9A.pdb
->>>>>>> 1eea09a9156737b043df6e38d6dd5632413c1185

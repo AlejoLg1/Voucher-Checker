@@ -96,12 +96,10 @@ namespace Services
                 DB.setQuery("select Documento from Clientes where Documento = @Dni");
                 DB.setParameter("@Dni", Dni);
                 DB.excecuteQuery();
-
                 if (DB.Reader.Read())
                 {
                     response = true;
                 }
-
                 return response;
             }
             catch (Exception ex)
@@ -113,6 +111,7 @@ namespace Services
                 DB.CloseConnection();
             }
         }
+<<<<<<< HEAD
 
         public int ObtenerId(string dni)
         {
@@ -143,5 +142,8 @@ namespace Services
                 DB.clearParameters();
             }
         }
+=======
+>>>>>>> 1c23f7fb0d0bc5d3c2808453650cd2f945f21c2e
     }
+
 }
