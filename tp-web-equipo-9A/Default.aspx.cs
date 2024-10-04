@@ -28,7 +28,7 @@ namespace tp_web_equipo_9A
                 }
                 else
                 {
-                    // Acá estaría el redirect a la página de selección de artículo
+                    Response.Redirect("~/Premio.aspx");
                 }
             }
             catch (Exception ex)

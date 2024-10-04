@@ -17,12 +17,19 @@ namespace tp_web_equipo_9A
         public List<string> listimagenes { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
-            ArticuloServices articuloServices = new ArticuloServices();
-            articuloList = articuloServices.listar();
-            
-            Repetidor.DataSource= articuloList;
-            Repetidor.DataBind();
+            if (!IsPostBack) 
+            {
+                ArticuloServices articuloServices = new ArticuloServices();
+                articuloList = articuloServices.listar();
+
+                Repetidor.DataSource = articuloList;
+                Repetidor.DataBind();
+            }
         }
 
+        protected void btnElegirPremio_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Formulario.aspx");
+        }
     }
 }
