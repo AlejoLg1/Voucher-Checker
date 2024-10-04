@@ -32,9 +32,10 @@ namespace Services
                     articulo.Nombre = (string)DB.Reader["Nombre"];
                     articulo.Descripcion = (string)DB.Reader["Descripcion"];
                     articulo.Precio = (decimal)DB.Reader["Precio"];
-                    articulo.Imagen = DB.Reader["Imagen"] != DBNull.Value ? (string)DB.Reader["Imagen"] : "default-image.jpg";
+                    
 
                     AsignarMarcaYCategoria(articulo, DB.Reader);
+                    articulo.Imagenes = listarImagenes(articulo.Codigo);
 
                     list.Add(articulo);
                 }
@@ -55,15 +56,17 @@ namespace Services
         {
             List<string> list = new List<string>();
 
+            DataBaseAccess DB_Imagenes = new DataBaseAccess();
+
             try
             {
-                DB.setQuery("SELECT I.ImagenUrl as Imagen FROM IMAGENES AS I LEFT JOIN ARTICULOS AS A on A.Id = I.IdArticulo WHERE A.Codigo = @CodArticulo");
-                DB.setParameter("@CodArticulo", codArticulo);
-                DB.excecuteQuery();
+                DB_Imagenes.setQuery("SELECT I.ImagenUrl as Imagen FROM IMAGENES AS I LEFT JOIN ARTICULOS AS A on A.Id = I.IdArticulo WHERE A.Codigo = @CodArticulo");
+                DB_Imagenes.setParameter("@CodArticulo", codArticulo);
+                DB_Imagenes.excecuteQuery();
 
-                while (DB.Reader.Read())
+                while (DB_Imagenes.Reader.Read())
                 {
-                    list.Add(DB.Reader["Imagen"].ToString());
+                    list.Add(DB_Imagenes.Reader["Imagen"].ToString());
                 }
                 return list;
             }
@@ -73,9 +76,8 @@ namespace Services
             }
             finally
             {
-                DB.CloseConnection();
+                DB_Imagenes.CloseConnection();
             }
-
         }
 
         private void AsignarMarcaYCategoria(Articulo articulo, SqlDataReader reader)

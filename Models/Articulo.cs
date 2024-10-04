@@ -24,7 +24,7 @@ namespace Models
         [DisplayName("Categoría")]
         public Categoria Categoria { get; set; }
 
-        public string Imagen { get; set; }
+        public List<string> Imagenes { get; set; }  // Aquí la lista de imágenes
 
         public decimal Precio { get; set; }
     }
