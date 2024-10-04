@@ -1,6 +1,42 @@
-﻿.img-style {
-    max-width: 100%; /* No exceder el 100% del ancho del contenedor */
-    max-height: 200px; /* Límite máximo de altura de 200px */
-    height: auto; /* Ajustar la altura automáticamente para mantener proporciones */
-    object-fit: contain; /* Mantener el aspecto original, con espacio en blanco si es necesario */
+﻿.card {
+    display: flex;
+    flex-direction: column; /* Apila los elementos dentro de la tarjeta verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    text-align: center; /* Centra el texto */
+    height: 100%; /* Asegura que la tarjeta tenga una altura definida */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column; /* Apila el contenido de la tarjeta verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    text-align: center; /* Centra el texto */
+    justify-content: center; /* Centra verticalmente el contenido */
+    flex-grow: 1; /* Permite que el cuerpo de la tarjeta tome el espacio disponible */
+}
+
+
+.carousel-item {
+    height: 100%; /* Asegura que el item ocupe toda la altura del contenedor */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.carousel-item img {
+        max-width: 100%; /* Asegura que la imagen no desborde la tarjeta */
+        max-height: 200px; /* Limita la altura máxima de la imagen */
+        height: auto; /* Mantiene la proporción de la imagen */
+        object-fit: cover; /* Asegura que la imagen se ajuste sin distorsionarse */
+        margin: 0 auto; /* Centra la imagen en su contenedor */
+ }
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px; /* Define un ancho fijo para las flechas */
+    height: -50px; /* Define una altura fija para las flechas */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo para mejorar la visibilidad */
 }
