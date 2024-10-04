@@ -29,6 +29,8 @@ namespace tp_web_equipo_9A
 
         protected void btnElegirPremio_Click(object sender, EventArgs e)
         {
+            Button btn = (Button)sender;
+            Session.Add("IdArticuloSs", btn.CommandArgument);
             Response.Redirect("~/Formulario.aspx");
         }
     }

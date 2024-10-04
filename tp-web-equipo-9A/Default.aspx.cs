@@ -28,6 +28,7 @@ namespace tp_web_equipo_9A
                 }
                 else
                 {
+                    Session.Add("CodVoucherSs", txtVoucherCode.Text);
                     Response.Redirect("~/Premio.aspx");
                 }
             }

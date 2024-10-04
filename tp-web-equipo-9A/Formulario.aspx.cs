@@ -58,10 +58,13 @@ namespace tp_web_equipo_9A
                     }
                     else
                     {
+                        string CodVoucher = Session["CodVoucherSs"] != null ? Session["CodVoucherSs"].ToString() : "";
+                        int idArticulo = Session["IdArticuloSs"] != null ? Convert.ToInt32(Session["IdArticuloSs"]) : 0;
+
                         voucher.IdCliente = idCliente;
                         voucher.FechaCanje = DateTime.Now;
-                        voucher.CodigoVoucher = "Codigo02"; //Dato hardcodeado, me va allegar en el request
-                        voucher.IdArticulo = 2;//Dato hardcodeado, me va allegar en el request
+                        voucher.CodigoVoucher = CodVoucher;
+                        voucher.IdArticulo = idArticulo;
                         voucherServices.modify(voucher);
                         lblExito.Text = "Registro agregado correctamente";
                         lblError.Visible = false;
