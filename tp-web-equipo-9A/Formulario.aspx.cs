@@ -64,6 +64,7 @@ namespace tp_web_equipo_9A
                         voucher.IdArticulo = 2;//Dato hardcodeado, me va allegar en el request
                         voucherServices.modify(voucher);
                         lblExito.Text = "Registro agregado correctamente";
+                        lblError.Visible = false;
                         Response.Redirect("~/FormExito.aspx");
                     }
 
@@ -71,7 +72,7 @@ namespace tp_web_equipo_9A
                 }
                 catch (Exception ex)
                 {
-
+                    lblExito.Visible = false;
                     lblError.Text = "Ocurrio un error" + ex;
 
                 }
@@ -103,6 +104,7 @@ namespace tp_web_equipo_9A
                     txtCiudad.Text = dbAccess.Reader["Ciudad"].ToString();
                     txtCp.Text = dbAccess.Reader["CP"].ToString();
 
+                   
                     btnParticipar.Text = "Participar";
                     lblExito.Text = "Datos precargados correctamente.";
 
@@ -117,6 +119,7 @@ namespace tp_web_equipo_9A
                     txtCiudad.Text = "";
                     txtCp.Text = "";
 
+                    lblExito.Visible = false;
                     lblError.Text = "El cliente no existe. Puedes agregar uno nuevo.";
                     btnParticipar.Text = "Registrar y participar";
                 }
@@ -130,11 +133,6 @@ namespace tp_web_equipo_9A
                 dbAccess.CloseConnection();
                 dbAccess.clearParameters();
             }
-        }
-
-        protected void btnRedirect_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Default.aspx");
         }
     }
 }
