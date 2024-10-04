@@ -31,3 +31,14 @@ C:\Users\carlo\OneDrive\Escritorio\UTN FACU\2do Cuatrimestre 2024\Programacion I
 C:\Users\carlo\OneDrive\Escritorio\UTN FACU\2do Cuatrimestre 2024\Programacion III\TPWEB\Services\obj\Debug\Services.csproj.Up2Date
 C:\Users\carlo\OneDrive\Escritorio\UTN FACU\2do Cuatrimestre 2024\Programacion III\TPWEB\Services\obj\Debug\Services.dll
 C:\Users\carlo\OneDrive\Escritorio\UTN FACU\2do Cuatrimestre 2024\Programacion III\TPWEB\Services\obj\Debug\Services.pdb
+C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\Services\bin\Debug\Services.dll
+C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\Services\bin\Debug\Services.pdb
+C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\Services\bin\Debug\Models.dll
+C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\Services\bin\Debug\Utils.dll
+C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\Services\bin\Debug\Models.pdb
+C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\Services\bin\Debug\Utils.pdb
+C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\Services\obj\Debug\Services.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\Services\obj\Debug\Services.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\Services\obj\Debug\Services.csproj.Up2Date
+C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\Services\obj\Debug\Services.dll
+C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\Services\obj\Debug\Services.pdb

@@ -10,3 +10,9 @@ C:\Users\legna\Documents\Facultad\prog_tres\unidad_7\actividad_4\TPWeb_equipo-9\
 C:\Users\legna\Documents\Facultad\prog_tres\unidad_7\actividad_4\TPWeb_equipo-9\Utils\obj\Debug\Utils.csproj.CoreCompileInputs.cache
 C:\Users\legna\Documents\Facultad\prog_tres\unidad_7\actividad_4\TPWeb_equipo-9\Utils\obj\Debug\Utils.dll
 C:\Users\legna\Documents\Facultad\prog_tres\unidad_7\actividad_4\TPWeb_equipo-9\Utils\obj\Debug\Utils.pdb
+C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\Utils\bin\Debug\Utils.dll
+C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\Utils\bin\Debug\Utils.pdb
+C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\Utils\obj\Debug\Utils.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\Utils\obj\Debug\Utils.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\Utils\obj\Debug\Utils.dll
+C:\Users\Usuario\Documents\UTN\Programacion 3\App web progra 3\tp-web-equipo-9A\Utils\obj\Debug\Utils.pdb
