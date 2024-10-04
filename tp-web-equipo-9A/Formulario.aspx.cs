@@ -15,66 +15,66 @@ namespace tp_web_equipo_9A
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void btnParticipar_Click(object sender, EventArgs e)
         {
-            ClienteServices clienteServices = new ClienteServices();
-            VoucherServices voucherServices = new VoucherServices();
-            try
+
+            if (Page.IsValid)
             {
-                Cliente cliente = new Cliente();
-                Voucher voucher = new Voucher();
-                Articulo articulo = new Articulo();
-
-                if (!cboxTerminos.Checked)
+                ClienteServices clienteServices = new ClienteServices();
+                VoucherServices voucherServices = new VoucherServices();
+                try
                 {
-                    lblError.Text = "Debes aceptar los términos y condiciones.";
-                    return;
+                    Cliente cliente = new Cliente();
+                    Voucher voucher = new Voucher();
+                    Articulo articulo = new Articulo();
+
+                    if (!cboxTerminos.Checked)
+                    {
+                        lblError.Text = "Debes aceptar los términos y condiciones.";
+                        return;
+                    }
+
+                    cliente.Documento = txtDni.Text;
+                    cliente.Nombre = txtNombre.Text;
+                    cliente.Apellido = txtApellido.Text;
+                    cliente.Email = txtEmail.Text;
+                    cliente.Direccion = txtDireccion.Text;
+                    cliente.Ciudad = txtCiudad.Text;
+                    cliente.CP = int.Parse(txtCp.Text);
+
+
+                    if (!clienteServices.repeatedCode(cliente.Documento))
+                    {
+                        clienteServices.add(cliente);
+                    }
+
+                    int idCliente = clienteServices.ObtenerId(cliente.Documento);
+                    if (idCliente <= 0)
+                    {
+                        throw new Exception("ID de cliente no válido.");
+                    }
+                    else
+                    {
+                        voucher.IdCliente = idCliente;
+                        voucher.FechaCanje = DateTime.Now;
+                        voucher.CodigoVoucher = "Codigo02"; //Dato hardcodeado, me va allegar en el request
+                        voucher.IdArticulo = 2;//Dato hardcodeado, me va allegar en el request
+                        voucherServices.modify(voucher);
+                        lblExito.Text = "Registro agregado correctamente";
+                        Response.Redirect("~/FormExito.aspx");
+                    }
+
+
                 }
-
-                cliente.Documento = txtDni.Text;
-                cliente.Nombre = txtNombre.Text;
-                cliente.Apellido = txtApellido.Text;
-                cliente.Email = txtEmail.Text;
-                cliente.Direccion = txtDireccion.Text;
-                cliente.Ciudad = txtCiudad.Text;
-                cliente.CP = int.Parse(txtCp.Text);
-
-                if (!clienteServices.repeatedCode(cliente.Documento))
+                catch (Exception ex)
                 {
-                    clienteServices.add(cliente);
-                    lblError.Text = "Registro agregardo correctamente";
+
+                    lblError.Text = "Ocurrio un error" + ex;
+
                 }
-
-                int idCliente = clienteServices.ObtenerId(cliente.Documento);
-                if (idCliente <= 0)
-                {
-                    throw new Exception("ID de cliente no válido.");
-                }
-                else
-                {
-                    voucher.IdCliente = idCliente;
-                    voucher.FechaCanje = DateTime.Now;
-                    voucher.CodigoVoucher = "Codigo02"; //Dato hardcodeado, me va allegar en el request
-                    voucher.IdArticulo = 2;//Dato hardcodeado, me va allegar en el request
-                    voucherServices.modify(voucher);
-                    
-                }
-
-
-            }
-            catch (FormatException)
-            {
-                lblError.Text = "Debe ingresar valores numericos en el campo de CP";
-
-            }
-            catch (Exception ex)
-            {
-
-                lblError.Text = "Ocurrio un error" + ex;
-
             }
         }
 
@@ -104,7 +104,8 @@ namespace tp_web_equipo_9A
                     txtCp.Text = dbAccess.Reader["CP"].ToString();
 
                     btnParticipar.Text = "Participar";
-                    lblError.Text = "Datos precargados correctamente.";
+                    lblExito.Text = "Datos precargados correctamente.";
+
                 }
                 else
                 {
@@ -131,5 +132,9 @@ namespace tp_web_equipo_9A
             }
         }
 
+        protected void btnRedirect_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Default.aspx");
+        }
     }
 }

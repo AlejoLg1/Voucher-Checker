@@ -88,6 +88,7 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Default.aspx" />
     <Content Include="ErrorVoucher.aspx" />
+    <Content Include="FormExito.aspx" />
     <Content Include="Formulario.aspx" />
     <Content Include="Global.asax" />
     <Content Include="images\clover.png" />
@@ -142,6 +143,13 @@
     </Compile>
     <Compile Include="ErrorVoucher.aspx.designer.cs">
       <DependentUpon>ErrorVoucher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormExito.aspx.cs">
+      <DependentUpon>FormExito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormExito.aspx.designer.cs">
+      <DependentUpon>FormExito.aspx</DependentUpon>
     </Compile>
     <Compile Include="Formulario.aspx.cs">
       <DependentUpon>Formulario.aspx</DependentUpon>
