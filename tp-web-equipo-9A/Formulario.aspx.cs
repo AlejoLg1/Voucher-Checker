@@ -15,7 +15,7 @@ namespace tp_web_equipo_9A
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         protected void btnParticipar_Click(object sender, EventArgs e)
@@ -31,12 +31,7 @@ namespace tp_web_equipo_9A
                     Voucher voucher = new Voucher();
                     Articulo articulo = new Articulo();
 
-                    if (!cboxTerminos.Checked)
-                    {
-                        lblError.Text = "Debes aceptar los términos y condiciones.";
-                        return;
-                    }
-
+           
                     cliente.Documento = txtDni.Text;
                     cliente.Nombre = txtNombre.Text;
                     cliente.Apellido = txtApellido.Text;
@@ -107,7 +102,7 @@ namespace tp_web_equipo_9A
                     txtCiudad.Text = dbAccess.Reader["Ciudad"].ToString();
                     txtCp.Text = dbAccess.Reader["CP"].ToString();
 
-                   
+
                     btnParticipar.Text = "Participar";
                     lblExito.Visible = true;
                     lblExito.Text = "Datos precargados correctamente.";
@@ -136,6 +131,11 @@ namespace tp_web_equipo_9A
                 dbAccess.CloseConnection();
                 dbAccess.clearParameters();
             }
+        }
+
+        protected void cvTerminos_ServerValidate(object source, ServerValidateEventArgs args)
+        {
+            args.IsValid = cboxTerminos.Checked;
         }
     }
 }
