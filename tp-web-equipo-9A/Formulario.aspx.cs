@@ -109,6 +109,7 @@ namespace tp_web_equipo_9A
 
                    
                     btnParticipar.Text = "Participar";
+                    lblExito.Visible = true;
                     lblExito.Text = "Datos precargados correctamente.";
 
                 }
@@ -122,6 +123,7 @@ namespace tp_web_equipo_9A
                     txtCiudad.Text = "";
                     txtCp.Text = "";
 
+                    lblExito.Visible = false;
                     btnParticipar.Text = "Registrar y participar";
                 }
             }
