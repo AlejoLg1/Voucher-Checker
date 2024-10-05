@@ -122,8 +122,6 @@ namespace tp_web_equipo_9A
                     txtCiudad.Text = "";
                     txtCp.Text = "";
 
-                    lblExito.Visible = false;
-                    lblError.Text = "El cliente no existe. Puedes agregar uno nuevo.";
                     btnParticipar.Text = "Registrar y participar";
                 }
             }
