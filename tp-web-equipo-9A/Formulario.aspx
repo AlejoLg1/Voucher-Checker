@@ -139,14 +139,14 @@
 
             <asp:CheckBox ID="cboxTerminos" runat="server" />
             <label class="form-check-label" for="cboxTerminos">Acepto los términos y condiciones.</label>
-
             <asp:CustomValidator
                 ID="cvTerminos"
                 runat="server"
                 ErrorMessage="Debe aceptar los términos y condiciones."
                 OnServerValidate="cvTerminos_ServerValidate"
                 CssClass="text-danger"
-                Display="Dynamic" />
+                Display="Dynamic"></asp:CustomValidator>
+
 
             <!-- Botón de Participar -->
             <div>
